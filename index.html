@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assest/css/grid.css">
+    <link rel="stylesheet" href="./assest/css/style.css">
+    <link rel="stylesheet" href="./assest/css/modal.css">
+    <link rel="stylesheet" href="./assest/css/order.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header">
+                <div class="logo">
+
+                </div>
+                <div class="header_name">
+                    <div class="name_football_pitches">
+                        Thế giới bóng đá Bernabeu
+                    </div>
+                    <div class="name_header_slogan">
+                        Uy tín - Chất lượng - Bảo mật
+                    </div>
+                </div>
+
+            </div>
+            <div class="nav">
+                <div class="menu">
+                    
+                    <span class="menu-main">
+                        <i class="bi bi-justify"></i>
+                        Menu
+                    </span>
+                    
+
+                    <div class="menu2">
+                        <h3 class="menu2_title">Menu</h3>
+                        <div class="btn-exit">
+                            <i class="fas fa-times"></i>
+                        </div>
+                        <ul class="menu2_list">
+                            <li class="menu2_item">
+                                <i class="fas fa-user"></i> Tài khoản cá nhân
+                            </li>
+                            <li class="menu2_item">
+                                <i class="fas fa-history"></i> Lịch sử đặt sân 
+                            </li>
+                            <li class="menu2_item">
+                                <i class="fas fa-cog"></i> Cài đặt
+                            </li>
+                            <li class="menu2_item">
+                                <i class="fas fa-sign-out"></i> Đăng xuất
+                            </li>
+
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="link_list">
+                    <div class="link_icon page-state">
+                        Home
+                    </div>
+                    <div class="link_icon">
+                        About
+                    </div>
+                    <div class="link_icon">
+                        Contact
+                    </div>
+                    <div class="link_icon" id="btn-login">
+                        Đăng nhập
+                    </div>
+                    <div class="link_icon" id="btn-register">
+                        Đăng kí
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="subnav">
+                <div class="img_soccer">
+                    <img class="img_soccer-logo" src="https://thuviendohoa.vn/upload/images/items/hinh-anh-cau-thu-bong-da-sut-vo-le-png-448.jpg" alt="">
+                </div>
+                <div class="search-main">
+                    <input class="search_input" type="text" placeholder="Tìm kiếm trên Bernabeu shop ....">
+                    <div class="icon_search">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                <div class="cart_icon">
+                    
+                    <i class="fas fa-cart-arrow-down"></i>
+                    
+                    <div class="my__cart">
+                        <!-- Khi giỏ hàng có sản phẩm -->
+                        <div class="cart__container have__cart">
+                            <h4 class="cart__container--heading">Sản phẩm mới thêm</h4>
+                            <ul class="cart__container--list">
+                                <li class="cart__container--item">
+                                    <div class="cart__item--img"><img src="https://vnn-imgs-f.vgcloud.vn/2020/03/27/20/real-madrid-dung-san-bernabeu-lam-noi-tiep-te-chong-dich-covid-19-1.jpg" alt=""></div>
+                                    <div class="cart__item--body">
+                                        <div class="cart__body--main">
+                                            <div class="cart__item--name">Sân A1</div>
+                                            <div class="cart__item--sum">
+                                                <div class="cart__item--price">500000đ/h</div>
+                                                <span>x</span>
+                                                <span class="cart__item--quantity">2h</span>
+                                            </div>
+                
+                                        </div>
+                
+                                        <div class="cart__body--handle">
+                                            <div class="item__rank">Phân loại sân : Sân 7</div>
+                                            <div class="item__delete">Xoá</div>
+                                        </div>
+                                        <div class="cart-info-list">
+                                            <div class="cart-infor-list-item">
+                                                <span class="time-order">
+                                                    Giờ thuê : 
+                                                </span>
+                                                <span class="time-order-value">
+                                                    17h
+                                                </span>
+                                            </div>
+                                        </div>
+                
+                                    </div>
+                                </li>
+                                <li class="cart__container--item">
+                                    <div class="cart__item--img"><img src="https://vnn-imgs-f.vgcloud.vn/2020/03/27/20/real-madrid-dung-san-bernabeu-lam-noi-tiep-te-chong-dich-covid-19-1.jpg" alt=""></div>
+                                    <div class="cart__item--body">
+                                        <div class="cart__body--main">
+                                            <div class="cart__item--name">Sân A2</div>
+                                            <div class="cart__item--sum">
+                                                <div class="cart__item--price">400000đ/h</div>
+                                                <span>x</span>
+                                                <span class="cart__item--quantity">2h</span>
+                                            </div>
+                                        </div>
+                                        <div class="cart__body--handle">
+                                            <div class="item__rank">Phân loại sân : Sân 7</div>
+                                            <div class="item__delete">Xoá</div>
+                                        </div>
+                                        <div class="cart-info-list">
+                                            <div class="cart-infor-list-item">
+                                                <span class="time-order">
+                                                    Giờ thuê : 
+                                                </span>
+                                                <span class="time-order-value">
+                                                    17h
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="cart__container--footter">
+                                <div class="btn-view-cart btn__view"><a href="">Xem giỏ hàng</a></div>
+                            </div>
+                        </div>
+                        <!-- Khi giỏ hàng chưa có sản phẩm -->
+                        <div class="no_order-main">
+                            <div class="my__cart--img">
+                                <i class="fab fa-opencart"></i>
+                    
+                            </div>
+                            <p class="my__cart--text">Chưa Có Sản Phẩm</p>
+                
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </header>
+
+        <div class="slider">
+            <div class="slider-wrap">
+                <div  class="btn-slider btn-prev">
+                    <i class="bi bi-chevron-left"></i>
+                </div>
+                <div  class="btn-slider btn-next">
+                    <i class="bi bi-chevron-right"></i>
+                </div>
+                <div class="slider-main">
+                    <div class= 'slider-item index0'>
+                        <img class='slider-img' src='./assest/img/silder/img1.jpg' alt="" />
+                    </div>
+                    <div class= 'slider-item index1'>
+                        <img class='slider-img' src='./assest/img/silder/img2.jpg' alt="" />
+                    </div>
+                    <div class= 'slider-item index2'>
+                        <img class='slider-img' src='./assest/img/silder/img3.jpg' alt="" />
+                    </div>
+                    <div class= 'slider-item index3'>
+                        <img class='slider-img' src='./assest/img/silder/img4.jpg' alt="" />
+                    </div>
+                    <div class= 'slider-item index4'>
+                        <img class='slider-img' src='./assest/img/silder/img5.jpg' alt="" />
+                    </div>
+                    <div class= 'slider-item index5'>
+                        <img class='slider-img' src='./assest/img/silder/img6.jpg' alt="" />
+                    </div>
+                    <div class= 'slider-item index6'>
+                        <img class='slider-img' src='./assest/img/silder/img7.jpg' alt="" />
+                    </div>
+                    <div class= 'slider-item index7'>
+                        <img class='slider-img' src='./assest/img/silder/img8.jpg' alt="" />
+                       
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="main">
+            <div class="grid wide">
+                <div class="row render-product">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="evaluate">
+            <div class="evaluate__title ">
+                <h2 class="evaluate__heading main-effect">Đánh giá khách hàng</h2>
+            </div>
+            <div class="evaluate__overlay"></div>
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-4 m-6 c-12">   
+                        <div class="evaluate__user">
+                            <div class="evaluate__user-img">
+                                <img src="./assest/img/user/img0.jpg" alt="">
+                            </div>
+                            <div class="evaluate__content">
+                                <div class="evaluate__content-icon">
+                                    <i class="evaluate__content-icon--star fas fa-star"></i>
+                                    <i class="evaluate__content-icon--star fas fa-star"></i>
+                                    <i class="evaluate__content-icon--star fas fa-star"></i>
+                                    <i class="evaluate__content-icon--star fas fa-star"></i>
+                                    <i class="evaluate__content-icon--star fas fa-star"></i>
+                                </div>
+                                <h3 class="evaluate__content--name">Nguyễn Quang Hải</h3>
+                                <p class="evaluate__content--desc">
+                                    
+                                    Sân bóng sở hữu hệ thống cơ sở vật chất hiện đại, với hệ thống chiếu sáng hiện đại, cung cấp nguồn ánh sáng chân thực nhất cho người chơi trên sân
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-6 c-12">   
+                        <div class="evaluate__user">
+                            <div class="evaluate__user-img">
+                                <img src="./assest/img/user/img1.jpg" alt="">
+                            </div>
+                            <div class="evaluate__content">
+                                <div class="evaluate__content-icon">
+                                    <i class="evaluate__content-icon--star fas fa-star"></i>
+                                    <i class="evaluate__content-icon--star fas fa-star"></i>
+                                    <i class="evaluate__content-icon--star fas fa-star"></i>
+                                    <i class="evaluate__content-icon--star fas fa-star"></i>
+                                    <i class="evaluate__content-icon--star fas fa-star"></i>
+                                </div>
+                                <h3 class="evaluate__content--name">Đoàn Văn Hậu</h3>
+                                <p class="evaluate__content--desc">
+                                    
+                                    Sân bóng sở hữu hệ thống cơ sở vật chất hiện đại, với hệ thống chiếu sáng hiện đại, cung cấp nguồn ánh sáng chân thực nhất cho người chơi trên sân
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-6 c-12">   
+                        <div class="evaluate__user">
+                            <div class="evaluate__user-img">
+                                <img src="./assest/img/user/img2.png" alt="">
+                            </div>
+                            <div class="evaluate__content">
+                                <div class="evaluate__content-icon">
+                                    <i class="evaluate__content-icon--star fas fa-star"></i>
+                                    <i class="evaluate__content-icon--star fas fa-star"></i>
+                                    <i class="evaluate__content-icon--star fas fa-star"></i>
+                                    <i class="evaluate__content-icon--star fas fa-star"></i>
+                                    <i class="evaluate__content-icon--star fas fa-star"></i>
+                                </div>
+                                <h3 class="evaluate__content--name">Nguyễn Thanh Tùng</h3>
+                                <p class="evaluate__content--desc">
+                                    
+                                    Sân bóng sở hữu hệ thống cơ sở vật chất hiện đại, với hệ thống chiếu sáng hiện đại, cung cấp nguồn ánh sáng chân thực nhất cho người chơi trên sân.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="trademark">
+            <div class="grid wide">
+                <div class="title-section">
+                    <a class="title-section-link" href="#">
+                        <h2 class="heading-section main-effect">Thương hiệu</h2>
+                    </a>
+                </div>
+                <ul class="tradermark__list">
+                    <li class="tradermark__item">
+                        <a class="tradermark__item-link" href="">
+                            <img class="tradermark__item-logo" src="./assest/img/trademark/clarks.jpg" alt="">
+                        </a>
+                    </li>
+                    <li class="tradermark__item">
+                        <a class="tradermark__item-link" href="">
+                            <img class="tradermark__item-logo" src="./assest/img/trademark/v-nocolor.png" alt="">
+                        </a>
+                    </li>
+                    <li class="tradermark__item">
+                        <a class="tradermark__item-link" href="">
+                            <img class="tradermark__item-logo" src="./assest/img/trademark/vans.jpg" alt="">
+                        </a>
+                    </li>
+                    <li class="tradermark__item">
+                        <a class="tradermark__item-link" href="">
+                            <img class="tradermark__item-logo" src="./assest/img/trademark/puma.jpg" alt="">
+                        </a>
+                    </li>
+                    <li class="tradermark__item">
+                        <a class="tradermark__item-link" href="">
+                            <img class="tradermark__item-logo" src="./assest/img/trademark/echo.png" alt="">
+                        </a>
+                    </li>
+                    <li class="tradermark__item">
+                        <a class="tradermark__item-link" href="">
+                            <img class="tradermark__item-logo" src="./assest/img/trademark/v-color.jpg" alt="">
+                        </a>
+                    </li>
+                    <li class="tradermark__item">
+                        <a class="tradermark__item-link" href="">
+                            <img class="tradermark__item-logo" src="./assest/img/trademark/ugg.png" alt="">
+                        </a>
+                    </li>
+                    <li class="tradermark__item">
+                        <a class="tradermark__item-link" href="">
+                            <img class="tradermark__item-logo" src="./assest/img/trademark/converse.jpg" alt="">
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        <footer class="footer">
+            
+
+            <div class="footer__information">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-2-4 m-6 c-12">
+                            <div class="footer__infomation-contact">
+                                <h3 class="footer__infomation--contact-heading">LIÊN HỆ</h3>
+                                <ul class="footer__infomation--contact-list">
+                                    <li class="footer__infomation--contact-name">Bernabeu</li>
+                                    <li class="footer__infomation--contact-address">Địa chỉ: Số nhà 30, ngõ 7, đường Vạn Xuân, khu tái định cư Lai Xá, Hoài Đức, Hà Nội.</li>
+                                    <li class="footer__infomation--contact-email">Email: nmcnpm@gmail.vn</li>
+                                    <li class="footer__infomation--contact-phone">Số điện thoại: 0373984009</li>
+                                        <div class="gird">
+                                            <div class="row no-gutters">
+                                                <div class="col l-3">
+                                                    <img class="footer__infomation--bank" src="./assest/img/bank/payment-1.png" alt="">
+                                                </div>
+                                                <div class="col l-3">
+                                                    <img class="footer__infomation--bank" src="./assest/img/bank/payment-2.png" alt="">
+                                                </div>
+                                                <div class="col l-3">
+                                                    <img class="footer__infomation--bank" src="./assest/img/bank/payment-3.png" alt="">
+                                                </div>
+                                                <div class="col l-3">
+                                                    <img class="footer__infomation--bank" src="./assest/img/bank/payment-4.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col l-2-4 m-6 c-12">
+                            <div class="footer__infomation-content">
+                                <h3 class="footer__infomation--heading">KÊNH BÁN HÀNG</h3>
+                                <ul class="footer__infomation--list">
+                                    <li class="footer__infomation--item"><a href="#" class="footer__infomation--link">Shoope</a></li>
+                                    <li class="footer__infomation--item"><a href="#" class="footer__infomation--link">Sendo</a></li>
+                                    <li class="footer__infomation--item"><a href="#" class="footer__infomation--link">Zalo</a></li>
+                                    <li class="footer__infomation--item"><a href="#" class="footer__infomation--link">Lazada</a></li>
+                                    <li class="footer__infomation--item"><a href="#" class="footer__infomation--link">Tiki</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col l-2-4 m-4 c-12">
+                            <div class="footer__infomation-content">
+                                <h3 class="footer__infomation--heading">TÌM HIỂU THÊM</h3>
+                                <ul class="footer__infomation--list">
+                                    <li class="footer__infomation--item"><a href="#" class="footer__infomation--link">Về Bernabeu</a></li>
+                                    <li class="footer__infomation--item"><a href="#" class="footer__infomation--link">Chương trình khuyến mãi</a></li>
+                                    <li class="footer__infomation--item"><a href="#" class="footer__infomation--link">Hướng dẫn đặt hàng</a></li>
+                                    <li class="footer__infomation--item"><a href="#" class="footer__infomation--link">Hướng dẫn chọn sân</a></li>
+                                    <li class="footer__infomation--item"><a href="#" class="footer__infomation--link">Tin tức</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col l-2-4 m-4 c-12">
+                            <div class="footer__infomation-content">
+                                <h3 class="footer__infomation--heading">CHÍNH SÁCH</h3>
+                                <ul class="footer__infomation--list">
+                                    <li class="footer__infomation--item"><a href="#" class="footer__infomation--link">Chính sách bán hàng</a></li>
+                                    <li class="footer__infomation--item"><a href="#" class="footer__infomation--link">Chính sách hoàn hàng</a></li>
+                                    <li class="footer__infomation--item"><a href="#" class="footer__infomation--link">Chính sách vận chuyển</a></li>
+                                    <li class="footer__infomation--item"><a href="#" class="footer__infomation--link">Chính sách cộng tác viên</a></li>
+                                    <li class="footer__infomation--item"><a href="#" class="footer__infomation--link">Chính sách bảo hành</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col l-2-4 m-4 c-12">
+                            <div class="footer__infomation-content">
+                                <h3 class="footer__infomation--heading">SẢN PHẨM</h3>
+                                <ul class="footer__infomation--list">
+                                    <li class="footer__infomation--item"><a href="#" class="footer__infomation--link">Sản phẩm nổi bật</a></li>
+                                    <li class="footer__infomation--item"><a href="#" class="footer__infomation--link">Bộ sưu tập mới</a></li>
+                                    <li class="footer__infomation--item"><a href="#" class="footer__infomation--link">Bộ sưu tập 2022</a></li>
+                                    <li class="footer__infomation--item"><a href="#" class="footer__infomation--link">Sản phẩm nổi bật</a></li>
+                                    <li class="footer__infomation--item"><a href="#" class="footer__infomation--link">Sản phẩm khuyến mãi</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Box-contact -->
+        <div class="box__contact">
+            <div class="box__seclecter">
+                <a href="#">
+                    <img src="./assest/img/icon-img/telephone.png" alt="" class="box__seclecter-img box__seclecter-img--phone">
+                </a>
+            </div>
+            <div class="box__seclecter">
+                <a href="#">
+                    <img src="./assest/img/icon-img/messenger.png" alt="" class="box__seclecter-img">
+                </a>
+            </div>
+            <div class="box__seclecter">
+                <a href="#">
+                    <img src="./assest/img/icon-img/zalo_des.png" alt="" class="box__seclecter-img">
+                </a>
+            </div>
+        </div>
+
+        <a href="#" class="active-top">
+            <img src="./assest/img/icon-img/to-top-arrow2.png" alt="">
+        </a>
+    </div>
+    <div class="modal modal__registration">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <div class="modal__header">
+                <h3 class="register btn__form--colorBlack">Đăng Ký</h3>
+                <span class="btn__form--colorRed from-login">Đăng Nhập</span>
+            </div>
+            <form action="">
+                <div class="modal__content">
+                    <div class="modal--content--input">
+                        <input type="email" name="" class="input--email" placeholder="Họ và tên">
+                    </div>
+                    <div class="modal--content--input">
+                        <input type="email" name="" class="input--email" placeholder="Số điện thoại">
+                    </div>
+                    
+                    <div class="modal--content--input">
+                        <input type="password" name="" class="input--password" placeholder="Mật Khẩu">
+                    </div>
+                    <div class="modal--content--input">
+                        <input type="password" name="" class="input--password__check" placeholder="Nhập Lại Mật Khẩu">
+                    </div>
+                    <p class="content--text">
+                        Bằng việc đăng kí, bạn đã đồng ý với Bernabeu về <a href="">Điều khoản dịch vụ</a>
+                        & <a href="">Chính sách bảo mật</a>
+                    </p>
+                </div>
+            </form>
+            
+            <div class="modal__bottom">
+                <div class="modal__bottom--converse">
+                    <div class="btn close_register">TRỞ LẠI</div>
+                    <div class="btn btn__register">ĐĂNG KÝ</div>
+                </div>
+                <div class="bottom__network">
+                    <div class="btn bottom--facebook">
+                        <i class="fab fa-facebook-square"></i>
+                        <a href="https://vi-vn.facebook.com/" target="blank">Kết nối với Facebook</a>
+
+                    </div>
+                    <div class="btn bottom--google">
+                        <i class="fab fa-google-plus-square"></i>
+                        <a href="https://accounts.google.com/signin/v2/identifier?passive=1209600&continue=https%3A%2F%2Fcontacts.google.com%2F%3Fhl%3Dvi&followup=https%3A%2F%2Fcontacts.google.com%2F%3Fhl%3Dvi&hl=vi&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+                            target="blank">
+                            Kết nối với Google
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+      <!-- Đăng nhập -->
+    <div class="modal modal__login">
+        <label for="input__checkox__registration" class="modal__overlay"></label>
+        <div class="modal__body">
+            <div class="modal__header">
+                <h3 class="register btn__form--colorBlack">Đăng Nhập</h3>
+                <span class="btn__form--colorRed from-register">Đăng Ký</span>
+            </div>
+            <form action="">
+                <div class="modal__content">
+                    <div class="modal--content--input">
+                        <input type="email" name="" id="acc" class="input--email" placeholder="Nhập số điện thoại">
+                    </div>
+                    <div class="modal--content--input">
+                        <input type="password" name="" id="password" class="input--password" placeholder="Mật Khẩu">
+                    </div>
+                    <p class="content--text">
+                        <a href="">Quên mật khẩu</a>
+                        <a href="">Cần trợ giúp ?</a>
+                    </p>
+                </div>
+            </form>
+            
+            <div class="modal__bottom">
+                <div class="modal__bottom--converse">
+                    <div class="btn close_login">TRỞ LẠI</div>
+                    <div id="btn__thaobap" class="btn btn__register">ĐĂNG NHẬP</div>
+                </div>
+                <div class="bottom__network">
+                    <div class="btn bottom--facebook">
+                        <i class="fab fa-facebook-square"></i>
+                        <a href="https://vi-vn.facebook.com/" target="blank">Đăng nhập Facebook</a>
+                    </div>
+                    <div class="btn bottom--google">
+                        <i class="fab fa-google-plus-square"></i>
+                        <a href="https://accounts.google.com/signin/v2/identifier?passive=1209600&continue=https%3A%2F%2Fcontacts.google.com%2F%3Fhl%3Dvi&followup=https%3A%2F%2Fcontacts.google.com%2F%3Fhl%3Dvi&hl=vi&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+                            target="blank">
+                            Đăng nhập Google
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="order-yard ">
+        <div class="overlay-order"></div>
+        <div class="order-yard-main">
+            <div class="order-yard-heading">
+                <div class="heading-title">
+                    Đặt sân
+                </div>
+                <div to='/' class="heading-icon-close">
+                    <i class="bi bi-x-circle"></i>
+                </div>
+            </div>
+            <div class="order-yard-body">
+                <div class="row-order">
+                    <div class="order-yard-title">Tên sân : </div>
+                    <div class="row-item-value name-yard"></div>
+                </div>
+                <div class="row-order">
+                    <div class="order-yard-title">
+                        Họ tên khách hàng :
+                    </div>
+                    
+                <input class='input-info-user name-user' type="text" />
+                    
+                </div>
+                <div class="row-order">
+                    <div class="order-yard-title">
+                        Số CMND/CCCD :
+                    </div>
+                    
+                <input class='input-info-user pass-name-user' type="text" />
+                    
+                </div>
+                <div class="row-order">
+                    <div class="order-yard-title">
+                        Số điện thoại :
+                    </div>
+                    <input class='input-info-user phone-user' type="text" />
+                    
+                </div>
+                <div class="order-date-yard">
+                    <div class="order-yard-title">
+                        Ngày đặt sân
+                    </div>
+                    <div class="order-date-yard-input">
+                        <input class='select-day-order' type="date" name="" id="" />
+                    </div>
+                    
+                </div>
+                <div class="order-time-yard">
+                    <div class="order-time-yard-left">
+                        <div class="order-yard-time-title">
+                            Thời gian bắt đầu
+                        </div>
+                        <div class="order-time-yard-left-value">
+                            <input class='input-time-start' type="time" />
+                        </div>
+                    </div>
+                    <div class="order-time-yard-right">
+                        <div class="order-yard-time-title">
+                            Thời gian kết thúc
+                        </div>
+                        <div class="order-time-yard-right-value">
+                            <input class='input-time-end' type="time" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row-order">
+                    <div class="order-yard-title">
+                        Loại sân :
+                    </div>
+                    <div class="row-item-value category-yard">
+                        Sân 
+                    </div>
+                </div>
+                <div class="row-order">
+                    <div class="order-yard-title">
+                        Giá sân (1h) :
+                    </div>
+                    <div class="row-item-value price-yard">
+                         đ
+                    </div>
+                </div>
+                <div class="row-order">
+                    <div class="order-yard-title">
+                        Tổng số tiền cần thanh toán : 
+                    </div>
+                    <div class="row-item-value sum-price">
+                        Chịu chịu
+                    </div>
+                </div>
+
+
+                <div class="bottom-order">
+                    <div class="btn-order-yard">
+                        Đặt sân
+                    </div>
+                </div>
+
+            </div>
+
+            
+
+            
+        </div>
+    </div> -->
+    <script src="./assest/js/slider.js"></script>
+    <script src="./assest/js/login.js"></script>
+    <script src="./assest/js/renderProduct.js"></script>
+    <script src="./assest/js/deleteItemCart.js"></script>
+</body>
+</html>
