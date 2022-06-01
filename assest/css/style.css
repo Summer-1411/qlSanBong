@@ -7,6 +7,7 @@ html {
     font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
 }
+
 :root {
     --primary: #21f024;
     --white: #fff;
@@ -14,7 +15,7 @@ html {
     --red: red;
     --green: #21f024;
     --yellow: rgb(154, 154, 0);
-    
+      
     --white-color: #fff;
     --black-color : #000;
     --text-color: #ccc;
@@ -23,6 +24,9 @@ html {
     --primary--color : #49A2FA;
     --primary-color: #014c8f;
     --fa--color: #ece9e9;
+}
+.true_user {
+    display: none;
 }
 /* header */
 .container {
@@ -111,7 +115,7 @@ body::-webkit-scrollbar-track {
     max-width: 1200px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content:center;
     margin-top: 20px;
 }
 .search-main {
@@ -384,7 +388,13 @@ a {
 .menu2_item {
     padding: 20px;
 }
+
 .menu2_item:hover {
+    background-color: var(--primary);
+    color: var(--white);
+    cursor: pointer;
+}
+.state-index {
     background-color: var(--primary);
     color: var(--white);
     cursor: pointer;
@@ -399,6 +409,10 @@ a {
     color: var(--black);
     padding: 10px 20px;
     transition: all 0.25s linear;
+}
+.false_user {
+    display: flex;
+    align-items: center;
 }
 
 .page-state {
@@ -603,6 +617,8 @@ a {
 .price-number {
     color: var(--red);
 }
+
+.btn-add,
 .btn-oder {
     background-color: aqua;
     padding: 10px 20px;
@@ -614,6 +630,7 @@ a {
     justify-content: center;
     cursor: pointer;
 }
+.btn-add:hover,
 .btn-oder:hover {
     opacity: 0.8;
     background-color: yellow;
@@ -1042,4 +1059,42 @@ img {
 
 .active-top img {
     width: 50%;
+}
+
+/* bảng đặt sân  */
+.history-order {
+    padding: 20px;
+}
+.history-order-title {
+    font-size: 2.2rem;
+    color: black;
+    margin-bottom: 30px;
+}
+table, td, th {  
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    
+}
+
+th, td {
+    padding: 15px;
+    font-size: 2rem;
+}
+.delete-item-order {
+    cursor: pointer;
+    padding: 10px 20px;
+    color: blue;
+    text-align: center;
+}
+.delete-item-order:hover {
+    opacity: 0.8;
+}
+/* Bật tắt xem sân đã đặt */
+#view-order {
+    display: none;
 }

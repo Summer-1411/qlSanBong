@@ -21,9 +21,9 @@
     <div class="container">
         <header>
             <div class="header">
-                <div class="logo">
-
-                </div>
+                <a href="./" class="logo">
+                    
+                </a>
                 <div class="header_name">
                     <div class="name_football_pitches">
                         Thế giới bóng đá Bernabeu
@@ -49,17 +49,18 @@
                             <i class="fas fa-times"></i>
                         </div>
                         <ul class="menu2_list">
-                            <li class="menu2_item">
+                            <li class="true_user menu2_item">
                                 <i class="fas fa-user"></i> Tài khoản cá nhân
+                                
                             </li>
-                            <li class="menu2_item">
-                                <i class="fas fa-history"></i> Lịch sử đặt sân 
+                            <li id="btn_view-order" class="true_user menu2_item">
+                                <i class="fas fa-history"></i> Sân đang đặt
+                            </li>
+                            <li class="true_user menu2_item log_out">
+                                <i class="fas fa-sign-out"></i> Đăng xuất
                             </li>
                             <li class="menu2_item">
                                 <i class="fas fa-cog"></i> Cài đặt
-                            </li>
-                            <li class="menu2_item">
-                                <i class="fas fa-sign-out"></i> Đăng xuất
                             </li>
 
                             
@@ -67,7 +68,7 @@
                     </div>
                 </div>
                 <div class="link_list">
-                    <div class="link_icon page-state">
+                    <div id="btn_home" class="link_icon page-state">
                         Home
                     </div>
                     <div class="link_icon">
@@ -76,107 +77,30 @@
                     <div class="link_icon">
                         Contact
                     </div>
-                    <div class="link_icon" id="btn-login">
-                        Đăng nhập
+                    <div class="false_user">
+                        <div class="link_icon" id="btn-login">
+                            Đăng nhập
+                        </div>
+                        <div class="link_icon" id="btn-register">
+                            Đăng kí
+                        </div>
                     </div>
-                    <div class="link_icon" id="btn-register">
-                        Đăng kí
+                    <div class="link_icon true_user">
+                        <i class="fas fa-user"></i>
+                        <span class="user_name">Thảo Bắp</span>
                     </div>
                     
                 </div>
             </div>
             <div class="subnav">
-                <div class="img_soccer">
-                    <img class="img_soccer-logo" src="https://thuviendohoa.vn/upload/images/items/hinh-anh-cau-thu-bong-da-sut-vo-le-png-448.jpg" alt="">
-                </div>
+                
                 <div class="search-main">
                     <input class="search_input" type="text" placeholder="Tìm kiếm trên Bernabeu shop ....">
                     <div class="icon_search">
                         <i class="fas fa-search"></i>
                     </div>
                 </div>
-                <div class="cart_icon">
-                    
-                    <i class="fas fa-cart-arrow-down"></i>
-                    
-                    <div class="my__cart">
-                        <!-- Khi giỏ hàng có sản phẩm -->
-                        <div class="cart__container have__cart">
-                            <h4 class="cart__container--heading">Sản phẩm mới thêm</h4>
-                            <ul class="cart__container--list">
-                                <li class="cart__container--item">
-                                    <div class="cart__item--img"><img src="https://vnn-imgs-f.vgcloud.vn/2020/03/27/20/real-madrid-dung-san-bernabeu-lam-noi-tiep-te-chong-dich-covid-19-1.jpg" alt=""></div>
-                                    <div class="cart__item--body">
-                                        <div class="cart__body--main">
-                                            <div class="cart__item--name">Sân A1</div>
-                                            <div class="cart__item--sum">
-                                                <div class="cart__item--price">500000đ/h</div>
-                                                <span>x</span>
-                                                <span class="cart__item--quantity">2h</span>
-                                            </div>
                 
-                                        </div>
-                
-                                        <div class="cart__body--handle">
-                                            <div class="item__rank">Phân loại sân : Sân 7</div>
-                                            <div class="item__delete">Xoá</div>
-                                        </div>
-                                        <div class="cart-info-list">
-                                            <div class="cart-infor-list-item">
-                                                <span class="time-order">
-                                                    Giờ thuê : 
-                                                </span>
-                                                <span class="time-order-value">
-                                                    17h
-                                                </span>
-                                            </div>
-                                        </div>
-                
-                                    </div>
-                                </li>
-                                <li class="cart__container--item">
-                                    <div class="cart__item--img"><img src="https://vnn-imgs-f.vgcloud.vn/2020/03/27/20/real-madrid-dung-san-bernabeu-lam-noi-tiep-te-chong-dich-covid-19-1.jpg" alt=""></div>
-                                    <div class="cart__item--body">
-                                        <div class="cart__body--main">
-                                            <div class="cart__item--name">Sân A2</div>
-                                            <div class="cart__item--sum">
-                                                <div class="cart__item--price">400000đ/h</div>
-                                                <span>x</span>
-                                                <span class="cart__item--quantity">2h</span>
-                                            </div>
-                                        </div>
-                                        <div class="cart__body--handle">
-                                            <div class="item__rank">Phân loại sân : Sân 7</div>
-                                            <div class="item__delete">Xoá</div>
-                                        </div>
-                                        <div class="cart-info-list">
-                                            <div class="cart-infor-list-item">
-                                                <span class="time-order">
-                                                    Giờ thuê : 
-                                                </span>
-                                                <span class="time-order-value">
-                                                    17h
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                            <div class="cart__container--footter">
-                                <div class="btn-view-cart btn__view"><a href="">Xem giỏ hàng</a></div>
-                            </div>
-                        </div>
-                        <!-- Khi giỏ hàng chưa có sản phẩm -->
-                        <div class="no_order-main">
-                            <div class="my__cart--img">
-                                <i class="fab fa-opencart"></i>
-                    
-                            </div>
-                            <p class="my__cart--text">Chưa Có Sản Phẩm</p>
-                
-                        </div>
-                    </div>
-                </div>
 
 
             </div>
@@ -220,12 +144,21 @@
                 
             </div>
         </div>
-        <div class="main">
+        <div class="main" id="no_view-order">
             <div class="grid wide">
                 <div class="row render-product">
 
                 </div>
             </div>
+        </div>
+        <div id="view-order" class="history-order">
+            <h1 class="history-order-title">
+                Sân đang đặt
+            </h1>
+            <table class="table-order">
+                
+                
+              </table>
         </div>
 
         <div class="evaluate">
@@ -474,10 +407,10 @@
             <form action="">
                 <div class="modal__content">
                     <div class="modal--content--input">
-                        <input type="email" name="" class="input--email" placeholder="Họ và tên">
+                        <input type="text" name="" class="input_name" placeholder="Họ và tên">
                     </div>
                     <div class="modal--content--input">
-                        <input type="email" name="" class="input--email" placeholder="Số điện thoại">
+                        <input type="text" name="" class="input_phone" placeholder="Số điện thoại">
                     </div>
                     
                     <div class="modal--content--input">
@@ -496,7 +429,7 @@
             <div class="modal__bottom">
                 <div class="modal__bottom--converse">
                     <div class="btn close_register">TRỞ LẠI</div>
-                    <div class="btn btn__register">ĐĂNG KÝ</div>
+                    <div class="btn btn__register submit_register">ĐĂNG KÝ</div>
                 </div>
                 <div class="bottom__network">
                     <div class="btn bottom--facebook">
@@ -530,7 +463,7 @@
             <form action="">
                 <div class="modal__content">
                     <div class="modal--content--input">
-                        <input type="email" name="" id="acc" class="input--email" placeholder="Nhập số điện thoại">
+                        <input type="text" name="" id="acc" class="" placeholder="Nhập số điện thoại">
                     </div>
                     <div class="modal--content--input">
                         <input type="password" name="" id="password" class="input--password" placeholder="Mật Khẩu">
@@ -545,7 +478,7 @@
             <div class="modal__bottom">
                 <div class="modal__bottom--converse">
                     <div class="btn close_login">TRỞ LẠI</div>
-                    <div id="btn__thaobap" class="btn btn__register">ĐĂNG NHẬP</div>
+                    <div id="btn__thaobap" class="btn btn__register submit_login">ĐĂNG NHẬP</div>
                 </div>
                 <div class="bottom__network">
                     <div class="btn bottom--facebook">
@@ -582,56 +515,52 @@
                     <div class="order-yard-title">Tên sân : </div>
                     <div class="row-item-value name-yard"></div>
                 </div>
-                <div class="row-order">
+                <div class="inputfield row-order">
                     <div class="order-yard-title">
                         Họ tên khách hàng :
                     </div>
                     
-                <input class='input-info-user name-user' type="text" />
+                    <input class='input input-info-user name-user' type="text" />
+                    <small></small>
                     
                 </div>
-                <div class="row-order">
+                <div class="inputfield row-order">
                     <div class="order-yard-title">
                         Số CMND/CCCD :
                     </div>
                     
-                <input class='input-info-user pass-name-user' type="text" />
-                    
+                    <input class='input input-info-user pass-name-user' type="text" />
+                    <small></small>
                 </div>
-                <div class="row-order">
+                <div class="inputfield row-order">
                     <div class="order-yard-title">
                         Số điện thoại :
                     </div>
-                    <input class='input-info-user phone-user' type="text" />
-                    
+                    <input class='input input-info-user phone-user' type="text" />
+                    <small></small>
                 </div>
-                <div class="order-date-yard">
+                <div class="inputfield row-order">
                     <div class="order-yard-title">
-                        Ngày đặt sân
+                        Ngày đặt sân :
                     </div>
-                    <div class="order-date-yard-input">
-                        <input class='select-day-order' type="date" name="" id="" />
-                    </div>
-                    
+                    <input class='input select-day-order' type="date" name="" id="" />
+                    <small></small>
                 </div>
-                <div class="order-time-yard">
-                    <div class="order-time-yard-left">
-                        <div class="order-yard-time-title">
-                            Thời gian bắt đầu
-                        </div>
-                        <div class="order-time-yard-left-value">
-                            <input class='input-time-start' type="time" />
-                        </div>
+                <div class="inputfield row-order">
+                    <div class="order-yard-title">
+                        Thời gian bắt đầu :
                     </div>
-                    <div class="order-time-yard-right">
-                        <div class="order-yard-time-title">
-                            Thời gian kết thúc
-                        </div>
-                        <div class="order-time-yard-right-value">
-                            <input class='input-time-end' type="time" />
-                        </div>
-                    </div>
+                    <input class='input input-time-start' type="time" />
+                    <small></small>
                 </div>
+                <div class="inputfield row-order">
+                    <div class="order-yard-title">
+                        Thời gian kết thúc :
+                    </div>
+                    <input class='input input-time-end' type="time" />
+                    <small></small>
+                </div>
+                
                 <div class="row-order">
                     <div class="order-yard-title">
                         Loại sân :
@@ -645,7 +574,7 @@
                         Giá sân (1h) :
                     </div>
                     <div class="row-item-value price-yard">
-                         đ
+                        <span class="coin-item"></span> đ/h
                     </div>
                 </div>
                 <div class="row-order">
@@ -653,7 +582,7 @@
                         Tổng số tiền cần thanh toán : 
                     </div>
                     <div class="row-item-value sum-price">
-                        Chịu chịu
+                        đ
                     </div>
                 </div>
 
@@ -673,7 +602,8 @@
     </div> -->
     <script src="./assest/js/slider.js"></script>
     <script src="./assest/js/login.js"></script>
+    <script src="./assest/js/menu.js"></script>
     <script src="./assest/js/renderProduct.js"></script>
-    <script src="./assest/js/deleteItemCart.js"></script>
+    <script src="./assest/js/order.js"></script>
 </body>
 </html>

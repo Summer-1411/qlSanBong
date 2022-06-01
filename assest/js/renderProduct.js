@@ -4,8 +4,8 @@ const ListYard = [
     {
         name: 'Sân A1',
         category: 7,
-        state: 0,
-        status: 'Sắp có',
+        state: 1,
+        status: 'Sân trống',
         price: 500000,
         img: './assest/img/main/img0.jpg'
     },
@@ -44,8 +44,8 @@ const ListYard = [
     {
         name: 'Sân B2',
         category: 5,
-        state: -1,
-        status: 'Bận',
+        state: 1,
+        status: 'Sân trống',
         price: 350000,
         img: './assest/img/main/img5.jpg'
     },
@@ -115,11 +115,15 @@ const htmls = ListYard.map((value) => {
                     <div class="price-title">
                         Giá : 
                     </div>
-                    <div class="price-number">${value.price} đ/h</div>
+                    <div class="price-number"> <span class = 'coin'>${value.price}</span> đ/h</div>
                 </div>
+                
+                
+                
                 <div  class= "${value.state === 1 ? "main-order btn-oder" : "main-order busy-item"}">
-                    Đặt sân
+                    Đặt ngay
                 </div>
+                
             </div>
         </div>
     </div>
@@ -133,24 +137,40 @@ const yard = $('.order-yard')
 
 btnOders.forEach(value => {
     value.addEventListener('click', () => {
-        let parent =  value.parentElement;
-        let nameYard = parent.querySelector('.yard-item-name').innerText
-        let categoryYard = parent.querySelector('.category-number').innerText
-        let priceYard = parent.querySelector('.price-number').innerText;
-        console.log(nameYard, categoryYard, priceYard);
-        
+        if(checkLogin){
+            let parent =  value.parentElement;
+            let nameYard = parent.querySelector('.yard-item-name').innerText
+            let categoryYard = parent.querySelector('.category-number').innerText
+            let priceYard = parent.querySelector('.coin').innerText;
+            console.log(nameYard, categoryYard, priceYard);
+            
+    
+            const name = $('.name-yard')
+            const category = $('.category-yard')
+            const price = $('.coin-item')
+            const userName = $('.name-user')
+            const userId = $('.pass-name-user')
+            const phone = $('.phone-user')
+            const date = $('.select-day-order')
+            const timeStart = $('.input-time-start')
+            const timeEnd = $('.input-time-end')
+            const sumCoin = $('.sum-price')
+            console.log(price);
+            name.innerText = nameYard
+            category.innerText = categoryYard
+            price.innerText = priceYard
+            date.value = null
+            timeStart.value = null
+            timeEnd.value = null
+            sumCoin.innerText = 0
+            yard.classList.add('view-order-yard')
 
-        const name = $('.name-yard')
-        const category = $('.category-yard')
-        const price = $('.price-yard')
-
-        name.innerText = nameYard
-        category.innerText = categoryYard
-        price.innerText = priceYard
-
-        yard.classList.add('view-order-yard')
+        }else{
+            alert('Vui lòng đăng nhập vào tài khoản để thực hiện yêu cầu ! ')
+        }
     })
 })
+
 
 const close = $('.heading-icon-close')
 
@@ -162,6 +182,8 @@ const btnBusy = $$('.busy-item')
 
 btnBusy.forEach(value => {
     value.addEventListener('click', () => {
-        alert('Nay sân này anh bao rồi cu :))');
+        alert('Sân bận :(((');
     })
 })
+
+
